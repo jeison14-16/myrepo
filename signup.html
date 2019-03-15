@@ -17,46 +17,47 @@
           <center><p>FORMULARIO DE REGISTRO</center>
 
 
-      <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Nombres: 
+      <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Nombres:
         <font face="Times new Roman" size="3" color="#FB1520">*  </td>
-        <td><input type="text" name="user" border="1" placeholder="" required 
-          onKeypress="if (event.keyCode >32 && event.keyCode  <65 ) event.returnValue = false;" >
+        <td>
+          <input type="text" name="user" border="1" placeholder="" required
+          onKeypress="if (event.keyCode >32 && event.keyCode  <65 || event.keyCode >90 && event.keyCode  <96) event.returnValue = false;"  >
         </td>
       </tr>
 
         <tr>
           <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Apellidos:
-           <font face="Times new Roman" size="3" color="#FF0000">*  
+           <font face="Times new Roman" size="3" color="#FF0000">*
            </td>
-          <td><input type="text" name="user" border="1" placeholder="" required 
-            onKeypress="if (event.keyCode >32 && event.keyCode  <65) event.returnValue = false;"> 
+          <td><input type="text" name="user" border="1" placeholder="" required
+            onKeypress="if (event.keyCode >32 && event.keyCode  <65) event.returnValue = false;">
           </td>
         </tr>
-    
+
           <tr>
-            <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Tipo de identificaión: 
-              <font face="Times new Roman" size="3" color="#FF0000">* 
+            <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Tipo de identificaión:
+              <font face="Times new Roman" size="3" color="#FF0000">*
              </td>
 
             <td> <select name="select">identificaiòn:
               <option value="value1">TI</option>
-              <option value="value2" selected>CC</option>    
+              <option value="value2" selected>CC</option>
               <option value="value3">CE</option>
               <option value="value3">RC</option>
               <option value="value3">PS</option>
             </select>
             </td>
-          </tr>  
+          </tr>
 
-			<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Numero de identificaión: 
+			<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Numero de identificaión:
         <font face="Times new Roman" size="3" color="#FB1520">*  </td>
-        <td><input type="text"  value="" maxlength="9" 
+        <td><input type="text"  value="" maxlength="9"
           onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; required" required></td></tr>
 
-		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Género: 
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Género:
       <font face="Times new Roman" size="3" color="#FB1520">*  </td>
-          <td>  <select name="select">Género:
-              <option value="value" selected>Genero </option>
+          <td>  <select name="select" required>Género:
+              <option value="value" > </option>
               <option value="value1">Masculino</option>
               <option value="value2">Femenino</option>
               <option value="value3">Otra</option>
@@ -66,7 +67,7 @@
         <td><input type="text"  value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; required"></td></tr>
 
 		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Celular: <font face="Times new Roman" size="3" color="#FB1520">* </td>
-        <td><input type="text"  value="" maxlength="9" 
+        <td><input type="text"  value="" maxlength="9"
           onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; " required> </td></tr>
 
 		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Departamento nac.: <font face="Times new Roman" size="3" color="#FB1520">*  </td>
