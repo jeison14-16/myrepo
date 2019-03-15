@@ -1,6 +1,6 @@
 <html><!--mi comentario -->
     <head>
-          <title>Mi tienda</title>
+          <title>FORMULARIO DE  REISTRO</title>
           <link rel="icon" type="image/ico" href="icons/logo.png">
     </head>
     <body bgcolor="#FAF9F9">
@@ -12,26 +12,197 @@
 
     <center>
 
-      <center><p>FORMULARIO DE REGISTRO</center>
-        <table border="0" align="center" color="red">
+
+      <table border="0" align="center" color="red">
+          <center><p>FORMULARIO DE REGISTRO</center>
 
 
-      <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Nombre: *  </td>
-        <td><input type="text" name="user" border="1" placeholder="Ingrese Nombres" required></td></tr>
+      <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Nombres: 
+        <font face="Times new Roman" size="3" color="#FB1520">*  </td>
+        <td><input type="text" name="user" border="1" placeholder="" required 
+          onKeypress="if (event.keyCode >32 && event.keyCode  <65 ) event.returnValue = false;" >
+        </td>
+      </tr>
 
-        <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Apellidos: *  </td>
-          <td><input type="text" name="user" border="1" placeholder="Ingrese Apellidos" required></td></tr>
+        <tr>
+          <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Apellidos:
+           <font face="Times new Roman" size="3" color="#FF0000">*  
+           </td>
+          <td><input type="text" name="user" border="1" placeholder="" required 
+            onKeypress="if (event.keyCode >32 && event.keyCode  <65) event.returnValue = false;"> 
+          </td>
+        </tr>
+    
+          <tr>
+            <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Tipo de identificaión: 
+              <font face="Times new Roman" size="3" color="#FF0000">* 
+             </td>
 
-          <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Tipo de identificaiòn: *  </td>
-          <td>  <select name="select">identificaiòn:
+            <td> <select name="select">identificaiòn:
               <option value="value1">TI</option>
-              <option value="value2" selected>CC</option>
+              <option value="value2" selected>CC</option>    
               <option value="value3">CE</option>
               <option value="value3">RC</option>
               <option value="value3">PS</option>
+            </select>
+            </td>
+          </tr>  
+
+			<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Numero de identificaión: 
+        <font face="Times new Roman" size="3" color="#FB1520">*  </td>
+        <td><input type="text"  value="" maxlength="9" 
+          onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; required" required></td></tr>
+
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Género: 
+      <font face="Times new Roman" size="3" color="#FB1520">*  </td>
+          <td>  <select name="select">Género:
+              <option value="value" selected>Genero </option>
+              <option value="value1">Masculino</option>
+              <option value="value2">Femenino</option>
+              <option value="value3">Otra</option>
             </select></td>
 
-      <tr><td align="center"><input type="file" name="archivosubido"></td></tr>
+			    <tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Telefono:  </td>
+        <td><input type="text"  value="" maxlength="9" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; required"></td></tr>
+
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Celular: <font face="Times new Roman" size="3" color="#FB1520">* </td>
+        <td><input type="text"  value="" maxlength="9" 
+          onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false; " required> </td></tr>
+
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Departamento nac.: <font face="Times new Roman" size="3" color="#FB1520">*  </td>
+          <td>  <select name="select">Departamento:
+              <option value="value2" selected>Departamento </option>
+              <option value="value3">Amazonas</option>
+              <option value="value3">Antioquia</option>
+              <option value="value3">Arauca</option>
+			  <option value="value3">Atlántico</option>
+              <option value="value3">Bolívar</option>
+              <option value="value3">Boyacá</option>
+              <option value="value3">Caldas</option>
+              <option value="value3">Caquetá</option>
+              <option value="value3">Casanare</option>
+			  <option value="value3">Cauca</option>
+              <option value="value3">Cesar</option>
+              <option value="value3">Chocó</option>
+              <option value="value3">Córdoba</option>
+              <option value="value3">Cundinamarca</option>
+              <option value="value3">Guainía</option>
+			  <option value="value3">Guaviare</option>
+              <option value="value3">Huila</option>
+              <option value="value3">La Guajira</option>
+              <option value="value3">Magdalena</option>
+              <option value="value3">Meta</option>
+              <option value="value3">Nariño</option>
+			  <option value="value3">Norte de Santander</option>
+              <option value="value3">Putumayo</option>
+              <option value="value3">Quindio</option>
+              <option value="value3">Risaralda</option>
+              <option value="value3">San Andres y Providencia</option>
+              <option value="value3">Santander</option>
+			  <option value="value3">Sucre</option>
+              <option value="value3">Tolima</option>
+              <option value="value3"> Valle del Cauca</option>
+              <option value="value3">Vaupés</option>
+              <option value="value3">Vichada</option>
+            </select></td>
+
+			<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Ciudad nac.: <font face="Times new Roman" size="3" color="#FB1520">* </td>
+          <td>  <select name="select">Ciudad:
+              <option value="value2" selected>Ciudad </option>
+
+				<option value="value3">   Aguachica Cesar</option>
+				<option value="value3">  Apartadó Antioquia</option>
+				<option value="value3">  Arauca </option>
+				<option value="value3">  Armenia Quindío</option>
+				 <option value="value3">Barrancabermeja Santander</option>
+				<option value="value3">Barranquilla Atlántico</option>
+				<option value="value3">Bello Antioquia</option>
+				<option value="value3">Bogotá Distrito Capital</option>
+				<option value="value3">Bucaramanga Santander</option>
+				<option value="value3">Buenaventura Valle del Cauca</option>
+				<option value="value3">Buga Valle del Cauca</option>
+				<option value="value3">Cali Valle del Cauca</option>
+				<option value="value3">Cartago Valle del Cauca</option>
+				<option value="value3">Cartagena Bolívar</option>
+				<option value="value3">Caucasia Antioquia</option>
+				<option value="value3">Cereté Córdoba</option>
+				<option value="value3">Chía Cundinamarca</option>
+				<option value="value3">Ciénaga Magdalena</option>
+				<option value="value3">Cúcuta Norte de Santander</option>
+				<option value="value3">Dosquebradas Risaralda</option>
+				<option value="value3">Duitama Boyacá</option>
+				<option value="value3">Envigado Antioquia</option>
+				<option value="value3">Facatativá Cundinamarca</option>
+				<option value="value3">Florencia Caquetá</option>
+				<option value="value3">Floridablanca Santander</option>
+				<option value="value3">Fusagasugá Cundinamarca</option>
+				<option value="value3">Girardot Cundinamarca </option>
+				<option value="value3">Girón Santander</option>
+				<option value="value3">Ibagué Tolima</option>
+				<option value="value3">Ipiales Nariño</option>
+				<option value="value3">Itagüí Antioquia</option>
+				<option value="value3">Jamundí Valle del Cauca</option>
+				<option value="value3">Lorica Córdoba </option>
+				<option value="value3">Los Patios Norte de Santander</option>
+				<option value="value3">Magangué Bolivar</option>
+				<option value="value3">Maicao Guajira</option>
+				<option value="value3">Malambo Atlántico </option>
+				<option value="value3">Manizales Caldas </option>
+				<option value="value3">Medellín Antioquia</option>
+				<option value="value3">Melgar Tolima</option>
+				<option value="value3">Montería Córdoba</option>
+				<option value="value3">Neiva Huila  </option>
+				<option value="value3">Ocaña Norte de Santander</option>
+				<option value="value3">Paipa, Boyacá </option>
+				<option value="value3">Palmira Valle del Cauca</option>
+				<option value="value3">Pamplona Norte de Santander</option>
+				<option value="value3">Pasto Nariño</option>
+				<option value="value3">Pereira Risaralda</option>
+				<option value="value3">Piedecuesta Santander</option>
+				<option value="value3">Pitalito Huila</option>
+				<option value="value3">Popayán Cauca</option>
+				<option value="value3">Quibdó Choco</option>
+				<option value="value3">Riohacha Guajira </option>
+				<option value="value3">Rionegro Antioquia</option>
+				<option value="value3">Sabanalarga Atlántico  </option>
+				<option value="value3">Sahagún Córdoba</option>
+				<option value="value3">San Andrés Isla </option>
+				<option value="value3">Santa Marta Magdalena</option>
+				<option value="value3">Sincelejo Sucre</option>
+				<option value="value3">Soacha Cundinamarca</option>
+				<option value="value3">Sogamoso Boyacá</option>
+				<option value="value3">Soledad Atlántico</option>
+				<option value="value3">Tibú Norte de Santander</option>
+				<option value="value3">Tuluá Valle del Cauca</option>
+				<option value="value3">Tumaco Nariño</option>
+				<option value="value3">Tunja Boyacá</option>
+				<option value="value3">Turbo Antioquia</option>
+				<option value="value3">Valledupar Cesar</option>
+				<option value="value3">Villa de Leyva</option>
+				<option value="value3">Villa del Rosario Norte de Santander</option>
+				<option value="value3">Villavicencio Meta</option>
+				<option value="value3">Yopal Casanare</option>
+				<option value="value3">Yumbo Valle del Cauca</option>
+				<option value="value3">Zipaquirá Cundinamarca</option>
+            </select></td>
+
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Correo Electronico: <font face="Times new Roman" size="3" color="#FB1520">* </td>
+        <td><input type="text" name="user" border="1" placeholder="" required onKeypress="if (event.keyCode >45 && event.keyCode  <57) event.returnValue = false;"></td></tr>
+
+		<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Contraseña: <font face="Times new Roman" size="3" color="#FB1520">* </td>
+			<td> <input type="password" name="password" placeholder="" required > </td></tr>
+			<tr><td align="left"><font face="Times new Roman" size="3" color="#0E0000">Confirmar Contraseña: <font face="Times new Roman" size="3" color="#FB1520">* </td>
+			<td>
+
+        <input type="password" name="password" placeholder="" required  > </td></tr>
+
+
+      <tr>  <td align="left"><font face="Times new Roman" size="3" color="#0E0000">Foto</td>
+	  <td> <input type="password" name="password" placeholder="" required   align="center"> <input type="file" name="archivosubido">
+
+	   </td></tr>
+
+	   <td colspan="2" align ="center"><br> <center><input type ="submit" value="REGISTRARSE"></center> </td>
     </table>
 
   </form>
